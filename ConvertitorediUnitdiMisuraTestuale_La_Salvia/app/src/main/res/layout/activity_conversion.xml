@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/main"
+        android:gravity="center">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/valori"
+            android:layout_marginTop="20dp">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtxtValore" android:layout_weight="1" android:hint="@string/valore_da_convertire"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edtxtRisultato" android:layout_weight="1" android:editable="false"
+                android:hint="Risultato"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/unita"
+            android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/edtxtUnitaPartenza" android:layout_weight="1" android:hint="@string/unit_di_partenza"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:layout_weight="1" android:id="@+id/edtxtUnitaArrivo" android:hint="@string/unit_di_arrivo"/>
+    </LinearLayout>
+    <Button
+            android:text="@string/converti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/btnConverti" android:layout_weight="1"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/txtError" android:layout_weight="1"/>
+</LinearLayout>
